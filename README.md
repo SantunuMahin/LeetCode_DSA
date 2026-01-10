@@ -1,68 +1,112 @@
-# LeetCode_DSA
-<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/4a8d4225-e2be-4f0a-83f7-f67104770414" />
-
-
-# 🚀 LeetCode DSA Solutions
+# 🚀 LeetCode DSA Mastery
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4a8d4225-e2be-4f0a-83f7-f67104770414" width="80%" />
+  <img src="https://github.com/user-attachments/assets/4a8d4225-e2be-4f0a-83f7-f67104770414" width="85%" />
 </p>
 
 <p align="center">
-  <b>A complete Data Structures & Algorithms journey using LeetCode problems</b><br>
-  Clean • Structured • Beginner-Friendly • Interview-Focused
+  <img src="https://img.shields.io/badge/DSA-LeetCode-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/your-username/LeetCode_DSA?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <b>🔥 A complete Data Structures & Algorithms preparation hub for coding interviews</b><br>
+  Structured • Optimized • Interview-Focused • Beginner Friendly
 </p>
 
 ---
 
-## 📌 About This Repository
+## ✨ Repository Highlights
 
-This repository contains my **LeetCode DSA solutions**, carefully organized by **data structure and topic**.  
-The goal is to **build strong fundamentals**, improve **problem-solving skills**, and prepare for **coding interviews**.
-
-✨ Each solution focuses on:
-- Clear logic
-- Optimal time & space complexity
-- Readable and maintainable code
+✅ 300+ LeetCode-style problems  
+✅ Topic-wise structured solutions  
+✅ Optimized (Time & Space)  
+✅ Clean & readable code  
+✅ Interview-oriented explanations  
 
 ---
 
-## 🧠 Topics Covered
+## 🧩 Problem Categories
 
-| Data Structure | Status |
-|---------------|--------|
-| 🔢 Array | ✅ Completed |
-| 🔗 Linked List | ✅ Completed |
-| 📚 Stack | ✅ Completed |
-| 🚦 Queue | ✅ Completed |
-| 🌳 Tree | 🔄 In Progress |
-| 🕸️ Graph | 🔄 In Progress |
-| 🧮 Recursion | 🔄 In Progress |
-| 🧠 Dynamic Programming | ⏳ Coming Soon |
+<details>
+<summary><b>🔢 Array</b></summary>
+
+- Two Sum  
+- Maximum Subarray  
+- Rotate Array  
+- Prefix Sum  
+- Kadane’s Algorithm  
+
+</details>
+
+<details>
+<summary><b>🔗 Linked List</b></summary>
+
+- Reverse Linked List  
+- Detect Cycle (Floyd’s Algorithm)  
+- Merge Two Sorted Lists  
+- Remove Duplicates  
+
+</details>
+
+<details>
+<summary><b>📚 Stack & Queue</b></summary>
+
+- Valid Parentheses  
+- Stack using Queue  
+- Queue using Stack  
+- Next Greater Element  
+
+</details>
+
+<details>
+<summary><b>🌳 Tree</b></summary>
+
+- Inorder / Preorder / Postorder  
+- Level Order Traversal  
+- Height of Binary Tree  
+- Lowest Common Ancestor  
+
+</details>
+
+<details>
+<summary><b>🕸️ Graph</b></summary>
+
+- BFS / DFS  
+- Cycle Detection  
+- Topological Sort  
+- Shortest Path  
+
+</details>
 
 ---
 
-## 📂 Repository Structure
+## 📊 Progress Tracker
+
+| Topic | Problems | Status |
+|------|---------|--------|
+| Array | 40+ | ✅ Completed |
+| Linked List | 25+ | ✅ Completed |
+| Stack | 20+ | ✅ Completed |
+| Queue | 15+ | ✅ Completed |
+| Tree | 30+ | 🔄 In Progress |
+| Graph | 25+ | 🔄 In Progress |
+| DP | 0 | ⏳ Coming Soon |
+
+---
+
+## 🗂️ Folder Structure
 
 ```bash
 LeetCode_DSA/
 │
 ├── Array/
-│   ├── two_sum.cpp
-│   ├── max_subarray.cpp
-│
 ├── LinkedList/
-│   ├── reverse_ll.cpp
-│   ├── detect_cycle.cpp
-│
 ├── Stack/
-│   ├── valid_parentheses.cpp
-│
 ├── Queue/
-│   ├── queue_using_stack.cpp
-│
 ├── Tree/
-│   ├── inorder_traversal.cpp
-│
-└── Graph/
-    ├── bfs.cpp
+├── Graph/
+├── Recursion/
+└── DynamicProgramming/
