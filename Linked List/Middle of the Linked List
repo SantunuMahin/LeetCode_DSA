@@ -4,8 +4,6 @@ Name: 876. Middle of the Linked List
 
 Given the head of a singly linked list, return the middle node of the linked list.
 If there are two middle nodes, return the second middle node.
-<img width="544" height="65" alt="image" src="https://github.com/user-attachments/assets/c3699faf-da82-4245-8b7e-5d716fe15e73" />
-
 
 Solution : 
 
