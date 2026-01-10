@@ -1,3 +1,2 @@
 # LeetCode_DSA
-
-<img width="544" height="65" alt="image" src="https://github.com/user-attachments/assets/c3699faf-da82-4245-8b7e-5d716fe15e73" />
+<img width="388" height="130" alt="image" src="https://github.com/user-attachments/assets/5b6cabe7-47b4-4a9a-a33a-13687684dd6f" />
