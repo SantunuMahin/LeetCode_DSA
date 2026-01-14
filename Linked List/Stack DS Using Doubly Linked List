@@ -80,3 +80,33 @@ int main(){
    }
 
 }
+
+Summary of the Code:
+
+Implements a Stack using a Doubly Linked List (DLL) in C++.
+
+Node class stores:
+
+prev pointer
+val (data)
+next pointer
+
+DLL_Stack class maintains:
+
+head → bottom of the stack
+tail → top of the stack
+s → current size of the stack
+Main Stack Operations:
+
+push(val) → Inserts a new element at the top (tail) of the stack.
+top() → Returns the value at the top of the stack.
+pop() → Removes the top element from the stack.
+size() → Returns the number of elements.
+empty() → Checks if the stack is empty.
+
+Program Flow in main()
+Reads n (number of elements).
+Pushes n values into the stack.
+Pops and prints elements one by one, producing LIFO (Last In, First Out) order.
+Key Idea
+The stack behavior is achieved by inserting and removing nodes only from the tail of the doubly linked list, ensuring efficient O(1) push and pop operations.
