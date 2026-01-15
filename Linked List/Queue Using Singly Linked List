@@ -1,0 +1,123 @@
+Queue Using Linked List
+
+What is a Queue?
+A queue is a linear data structure that follows the FIFO (First In, First Out) principle.
+This means the element that is inserted first will be removed first.
+
+Real-life examples:
+- People standing in a line
+- Printer job scheduling
+- CPU task scheduling
+
+Why Do We Use a Queue?
+Queues are used when:
+- Order matters (first request served first)
+- Tasks must be processed sequentially
+- We need fair resource sharing
+
+Common uses:
+- Operating systems (process scheduling)
+- Networking (packet handling)
+- Data buffering
+- Breadth First Search (BFS) in graphs
+
+Queue Behavior
+Main operations:
+- Enqueue (push): Insert element at the rear
+- Dequeue (pop): Remove element from the front
+
+Additional operations:
+- front(): get front element
+- back(): get last element
+- empty(): check if queue is empty
+- size(): number of elements
+
+FIFO Example:
+Insert: 10 → 20 → 30 → 40
+Remove: 10 → 20 → 30 → 40
+
+C++ Code Implementation
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Node{
+public:
+    int val;
+    Node* next;
+    Node(int val){
+        this->val = val;
+        this->next = NULL;
+    }
+};
+
+class LL_Queue{
+public:
+    Node* head = NULL;
+    Node* tail = NULL;
+    int sz = 0;
+
+    void push(int val){
+        sz++;
+        Node* newnode = new Node(val);
+        if(head == NULL){
+            head = newnode;
+            tail = newnode;
+            return;
+        }
+        tail->next = newnode;
+        tail = newnode;
+    }
+
+    int front(){
+        if(head == NULL) return -1;
+        return head->val;
+    }
+
+    void pop(){
+        if(head == NULL) return;
+        sz--;
+        head = head->next;
+    }
+
+    int size(){
+        return sz;
+    }
+
+    bool empty(){
+        return sz == 0;
+    }
+
+    int back(){
+        if(head == NULL) return -1;
+        return tail->val;
+    }
+};
+
+int main(){
+    LL_Queue llq;
+    llq.push(10);
+    llq.push(20);
+    llq.push(30);
+    llq.push(40);
+
+    while(!llq.empty()){
+        cout << llq.front() << " ";
+        llq.pop();
+    }
+    return 0;
+}
+
+Code Summary
+
+- This program implements a queue using a singly linked list.
+- Node stores a value and pointer to the next node.
+- LL_Queue maintains:
+  * head → front of the queue
+  * tail → rear of the queue
+  * sz → number of elements
+- push() inserts at the rear.
+- pop() removes from the front.
+- front() and back() return front and rear elements.
+- size() and empty() help manage the queue state.
+- Output is printed in FIFO order.
