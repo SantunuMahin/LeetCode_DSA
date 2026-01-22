@@ -1,5 +1,7 @@
+/**
 link: https://leetcode.com/problems/implement-stack-using-queues/
 Nmae: 225. Implement Stack using Queues
+*/
 SOLUTION:
 
 class MyStack {
@@ -33,7 +35,7 @@ public:
         return q.size()==0;
     }
 };
-
+/**
 Overview
 
 This class implements a stack using a single queue (std::queue) in C++. It mimics stack operations (LIFO) on top of a FIFO queue.
@@ -98,3 +100,4 @@ Stack is implemented using one queue.
 push() is fast (O(1)), but pop() is slower (O(n)) because we must transfer elements to access the last inserted item.
 
 top() directly accesses the last element of the queue (q.back()).
+*/
