@@ -1,3 +1,4 @@
+/**
 Stack Using Doubly Linked List
 
 What is a Stack?
@@ -37,7 +38,7 @@ Push: 10 → 20 → 30 → 40
 Pop: 40 → 30 → 20 → 10
 
 C++ Code Implementation (Using Doubly Linked List)
-
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -112,7 +113,7 @@ int main(){
     }
     return 0;
 }
-
+/**
 Code Summary
 
 - Implements a Stack using a Doubly Linked List (DLL).
@@ -140,4 +141,4 @@ Program Flow:
 Key Idea:
 - Stack behavior is achieved by inserting and removing nodes only from the tail of the doubly linked list.
 - Push and pop operations run in O(1) time.
-
+*/
