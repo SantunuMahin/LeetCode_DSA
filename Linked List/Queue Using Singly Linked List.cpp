@@ -1,3 +1,4 @@
+/**
 Queue Using Linked List
 
 What is a Queue?
@@ -37,6 +38,7 @@ Insert: 10 → 20 → 30 → 40
 Remove: 10 → 20 → 30 → 40
 
 C++ Code Implementation
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -107,7 +109,7 @@ int main(){
     }
     return 0;
 }
-
+/**
 Code Summary
 
 - This program implements a queue using a singly linked list.
@@ -121,3 +123,4 @@ Code Summary
 - front() and back() return front and rear elements.
 - size() and empty() help manage the queue state.
 - Output is printed in FIFO order.
+*/
