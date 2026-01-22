@@ -1,3 +1,4 @@
+/**
 Link: https://leetcode.com/problems/delete-node-in-a-linked-list/
 Name :  237. Delete Node in a Linked List
 
@@ -14,7 +15,7 @@ The value of the given node should not exist in the linked list.
 The number of nodes in the linked list should decrease by one.
 All the values before node should be in the same order.
 All the values after node should be in the same order.
-
+*/
 
 SOLUTION:
 /**
@@ -32,7 +33,7 @@ public:
         node->next = node->next->next;
     }
 };
-
+/**
 Summary:
 
 This solution deletes a node from a singly linked list when
@@ -49,3 +50,4 @@ Time complexity: O(1)
 No extra memory used.
 This is a common LeetCode trick for deleting a node without
 access to the head.
+*/
