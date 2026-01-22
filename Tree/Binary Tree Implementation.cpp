@@ -18,64 +18,81 @@ This code is useful for understanding how binary trees work and how different tr
 affect the order in which nodes are processed.
 */
 
-#include <bits/stdc++.h>
+#include 
 using namespace std;
 
-class Node{
-    public:
+class Node {
+public:
     int val;
     Node* left;
     Node* right;
-    Node(int val){
-        this->right = NULL;
+    
+    Node(int val) {
         this->val = val;
         this->left = NULL;
+        this->right = NULL;
     }
 };
 
-void print_preord(Node* root){
+// Preorder Traversal
+void print_preord(Node* root) {
     if(root == NULL) return;
-    cout<<root->val<<" ";
-
+    cout << root->val << " ";
     print_preord(root->left);
     print_preord(root->right);
 }
-void print_inord(Node* root){
-    if(root == NULL) return;
 
+// Inorder Traversal
+void print_inord(Node* root) {
+    if(root == NULL) return;
     print_inord(root->left);
-    cout<<root->val<<" ";
+    cout << root->val << " ";
     print_inord(root->right);
 }
-void print_postord(Node* root){
-    if(root == NULL) return;
 
+// Postorder Traversal
+void print_postord(Node* root) {
+    if(root == NULL) return;
     print_postord(root->left);
     print_postord(root->right);
-    cout<<root->val<<" ";
+    cout << root->val << " ";
 }
+
 int main() {
+    // Create tree nodes
     Node* root = new Node(10);
     Node* a = new Node(20);
     Node* b = new Node(30);
     Node* c = new Node(40);
     Node* d = new Node(50);
     Node* e = new Node(60);
-
+    
+    // Build tree structure
+    //       10
+    //      /  \
+    //    20    30
+    //   /     /  \
+    //  40    50   60
+    
     root->left = a;
     root->right = b;
-
     a->left = c;
-
     b->left = d;
     b->right = e;
-
+    
+    // Perform traversals
+    cout << "Preorder Traversal: ";
     print_preord(root);
-    cout<<endl;
+    cout << endl;
+    
+    cout << "Inorder Traversal: ";
     print_inord(root);
-    cout<<endl;
+    cout << endl;
+    
+    cout << "Postorder Traversal: ";
     print_postord(root);
+    cout << endl;
     
     return 0;
-
 }
+
