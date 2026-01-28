@@ -103,7 +103,7 @@
 LeetCode_DSA/
 │
 ├── Array/
-├── LinkedList/
+├── Linked List/
 ├── Stack/
 ├── Queue/
 ├── Tree/
